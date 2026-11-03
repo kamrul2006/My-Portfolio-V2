@@ -24,11 +24,14 @@ export default function Footer() {
           {/* Brand & Bio */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-600 to-cyan-400 flex items-center justify-center font-bold text-black text-base">
-                FP
+
+              <div className="w-9 h-9 flex items-center justify-center font-bold ">
+                             <img src="/favicon.png" alt="K" className="" />
+
               </div>
+
               <span className="text-xl font-bold tracking-tight text-white">
-                MD FAHIM PRODHAN
+                Kamrul Islam Apurba
               </span>
             </div>
             <p className="text-xs text-zinc-400 mt-2 max-w-sm">
@@ -52,7 +55,7 @@ export default function Footer() {
           {/* Socials & Back to Top */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/Fahim-Prodhan"
+              href="https://github.com/kamrul2006"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-full bg-white/5 border border-white/10 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors"
@@ -62,7 +65,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:fahimprodhan0@gmail.com"
+              href="mailto:kamrulislamapurba@gmail.com"
               className="p-2.5 rounded-full bg-white/5 border border-white/10 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors"
               title="Email"
             >
@@ -81,7 +84,7 @@ export default function Footer() {
 
         {/* Bottom Credits */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 gap-4">
-          <p>© {currentYear} MD Fahim Prodhan. All rights reserved.</p>
+          <p>© {currentYear} Kamrul Islam Apurba. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <span>Designed & Engineered with React 19, GSAP & Tailwind CSS</span>
           </div>
