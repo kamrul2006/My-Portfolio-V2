@@ -30,18 +30,19 @@ export default function HeroContent({ progress }) {
         </div>
 
         {/* Name Title */}
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-extrabold tracking-tight text-white max-w-4xl">
-          MD FAHIM <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-teal-300 to-blue-500">PRODHAN</span>
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-extrabold  text-white max-w-4xl">
+         KAMRUL ISLAM <br />
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-teal-300 to-blue-500">APURBA</span>
         </h1>
 
         {/* Roles & Tagline */}
         <p className="mt-4 text-base sm:text-xl md:text-2xl text-zinc-300 max-w-2xl font-light leading-relaxed">
-          Full Stack Developer & Web Instructor building scalable <span className="text-white font-medium">Multi-Tenant SaaS</span> and high-performance interactive web apps.
+          Frontend Developer & Web Instructor building scalable <span className="text-white font-medium">Multi-Tenant SaaS</span> and high-performance interactive web apps.
         </p>
 
         {/* Quick Tech Badges */}
         <div className="mt-6 flex flex-wrap justify-center gap-2 max-w-xl">
-          {["React 19", "Node.js", "Multi-Tenant SaaS", "Tailwind CSS", "GSAP"].map((tag) => (
+          {["React 19", "Node.js", "Multi-Tenant SaaS", "Tailwind CSS", "GSAP","Next.js"].map((tag) => (
             <span
               key={tag}
               className="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-black/40 border border-white/10 text-zinc-400"
