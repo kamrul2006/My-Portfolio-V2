@@ -47,9 +47,11 @@ export default function Navbar() {
             href="#"
             className="flex items-center gap-3 group text-white decoration-none"
           >
+            {/* --------------logo-------- */}
             <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform">
-             <img src="/Fi.png" alt="K" className="drop-shadow drop-shadow-cyan-500/50" />
+             <img src="/favicon.png" alt="K" className="" />
             </div>
+
             <div className="flex flex-col">
               <span className="font-bold text-sm tracking-wide text-white group-hover:text-cyan-400 transition-colors">
                 Kamru Islam Apurba
@@ -78,7 +80,7 @@ export default function Navbar() {
           {/* Action Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="https://github.com/Fahim-Prodhan"
+              href="https://github.com/kamrul2006"
               target="_blank"
               rel="noreferrer"
               className="p-2 text-zinc-400 hover:text-white hover:bg-white/10 rounded-full transition-colors"
@@ -88,11 +90,11 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#contact"
-              onClick={(e) => handleNavClick(e, "#contact")}
-              className="inline-flex items-center gap-1.5 bg-gradient-to-r from-cyan-500 to-cyan-400 text-black text-xs lg:text-sm font-semibold px-4 py-2 rounded-full hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105 transition-all"
+              href="/RESUME OF KAMRUL ISLAM .pdf"
+              download
+              className="inline-flex items-center gap-1.5 bg-linear-to-r from-cyan-500 to-cyan-400 text-black text-xs lg:text-sm font-semibold px-4 py-2 rounded-full hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105 transition-all"
             >
-              Let's Talk
+             Download CV
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -100,7 +102,8 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
             <a
-              href="https://github.com/Fahim-Prodhan"
+              href="https://github.com/kamrul2006"
+
               target="_blank"
               rel="noreferrer"
               className="p-2 text-zinc-400 hover:text-white"
@@ -136,17 +139,18 @@ export default function Navbar() {
 
           <div className="pt-4 border-t border-white/10 flex flex-col gap-2">
             <a
-              href="#contact"
-              onClick={(e) => handleNavClick(e, "#contact")}
+          href="/RESUME OF KAMRUL ISLAM .pdf"
+              download
               className="w-full text-center py-2.5 bg-cyan-400 text-black font-semibold rounded-xl text-sm hover:bg-cyan-300 transition-colors"
             >
-              Contact Fahim
+            Download CV
             </a>
             <a
               href="mailto:fahimprodhan0@gmail.com"
               className="w-full text-center py-2 text-zinc-400 hover:text-white text-xs flex items-center justify-center gap-1.5"
             >
-              <Mail className="w-4 h-4" /> fahimprodhan0@gmail.com
+              <Mail className="w-4 h-4" /> 
+              kamrulislamapurba@gmail.com
             </a>
           </div>
         </div>
