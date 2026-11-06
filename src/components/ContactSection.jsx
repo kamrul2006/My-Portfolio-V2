@@ -13,7 +13,7 @@ export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const email = "fahimprodhan0@gmail.com";
+  const email = "kamrulislamapurba@gmail.com";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -24,7 +24,7 @@ export default function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitting(true);
-    // Simulate swift submission
+    // -------------Simulate swift submission----------------
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
@@ -34,21 +34,26 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-24 bg-black relative border-t border-white/5">
-      {/* Background glow */}
+
+      {/* -------Background glow -------*/}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+
+        {/* ------Section Header -----*/}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
             <Mail className="w-3.5 h-3.5" />
             Get In Touch
           </div>
+
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Let's Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">Extraordinary</span>
+            Let's Build Something <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-teal-300">Extraordinary</span>
           </h2>
+
           <p className="mt-4 text-base sm:text-lg text-zinc-400">
-            Have a SaaS idea, an interactive web project, or looking for a full-stack engineer? Feel free to reach out.
+             Have a project in mind, a question, or just want to say hello?
+            I'd love to hear from you!
           </p>
         </div>
 
@@ -244,7 +249,7 @@ export default function ContactSection() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 text-black font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                    className="w-full py-4 rounded-xl bg-linear-to-r from-cyan-400 via-teal-300 to-cyan-500 text-black font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                   >
                     {submitting ? (
                       <>
